@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#maze {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
+#start, #end {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+#start {
+  background-color: green;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+#end {
+  background-color: blue;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.boundary {
+  position: absolute;
+  background-color: gray;
+  height: 10px;
+}
+
+#boundary1 {
+  top: 70px;
+  left: 10px;
+  width: 280px;
+}
+
+.boundary:nth-child(3) {
+  top: 140px;
+  left: 10px;
+  width: 280px;
+}
+
+.boundary:nth-child(4) {
+  left: 150px;
+  width: 10px;
+  height: 80px;
+}
+
+.boundary:nth-child(5) {
+  top: 200px;
+  left: 50px;
+  width: 200px;
+}
